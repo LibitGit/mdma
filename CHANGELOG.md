@@ -10,7 +10,7 @@
 **Better Who Is Here:**
 - emotions now update their position upon removal.
 - emotions are now displayed for the proper amount of time.
-- 
+
 **Auto Group:**
 - from now on the addon removes the ask property of parseJSON argument only when a party invite is sent to hero.
 - when hero is invited to party by a player from the same location the addon now correctly accepts the invite.
