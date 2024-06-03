@@ -1,5 +1,17 @@
 # Changelog
 
+## MDMA 1.2 test (2024/06/03)
+
+### Added
+
+### Changed
+- `Better Who Is Here`: added displacement logging upon calculation.
+
+### Fixed
+
+### Internal
+- Added a graphical interface.
+
 ## MDMA 1.1 test (2024/05/27)
 
 ### Added
