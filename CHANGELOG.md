@@ -1,4 +1,14 @@
 # Changelog
+## MDMA 1.3 test (2024/06/16)
+
+### Added
+
+### Changed
+
+### Fixed
+
+### Internal
+- MDMA now works server-side (partially)!
 
 ## MDMA 1.2 test (2024/06/03)
 
