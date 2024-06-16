@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "MDMA",
+  "description": "Multipurpose Discord to Margonem Addons",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "version": "1.3",
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.margonem.pl/"
+  ],
+  "background": {
+    "type": "module",
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Click to open the MDMA addon manager ",
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    }
+  },
+  "minimum_chrome_version": "102",
+  "content_scripts": [
+    {
+      "css": [
+        "styles/mdma.css"
+      ],
+      "matches": [
+        "https://*.margonem.pl/"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
