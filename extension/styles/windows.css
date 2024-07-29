@@ -1,0 +1,213 @@
+.window {
+    pointer-events: auto;
+    text-shadow: 1px 1px 1px #000;
+    color: rgb(245, 245, 220);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    min-height: 28px;
+    font-family: Arimo, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    position: absolute;
+    box-shadow: 0 0 1px #010101, 0 0 0 1px #ccc, 0 0 0 2px #0c0d0d, 1px 1px 2px 2px #0c0d0d66
+}
+
+
+.__class__0 {
+    display: none !important;
+}
+
+.window.resizable {
+    resize: both;
+    overflow: hidden;
+    min-width: 48px;
+}
+
+.mdma-header-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-wrap: nowrap;
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+    text-align: center;
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.mdma-text {
+    height: fit-content;
+    width: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.auto-x-setting .mdma-text {
+    padding: 0 5px;
+}
+
+.mdma-left-decor, .mdma-right-decor {
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    column-gap: 3px;
+    min-height: 12px;
+    min-width: 12px;
+    width: 40px;
+}
+
+.mdma-left-decor {
+    padding: 6px 0 6px 6px;
+}
+
+.mdma-right-decor {
+    padding: 6px 6px 6px 0;
+    justify-content: end;
+}
+
+.window-content {
+    color: white;
+    display: flex;
+    flex: 1;
+    padding: 5px;
+}
+
+.mdma-close-button {
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+    background: url("https://experimental.margonem.pl/img/gui/buttony.png") no-repeat -624px -117px;
+    width: 12px;
+    height: 12px;
+}
+
+.mdma-close-button:hover {
+    background-position: -726px -117px;
+}
+
+.config-window-toggle {
+    background: url("https://experimental.margonem.pl/img/gui/buttony.png") no-repeat -465px -399px;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.config-window-toggle:hover {
+    background-position: -433px -399px;
+}
+
+.mdma-checkbox {
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+    background: url("https://experimental.margonem.pl/img/gui/buttony.png") -484px -94px no-repeat;
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    margin: 0 6px 0 6px;
+    flex: none;
+}
+
+.auto-x-setting .mdma-checkbox {
+    margin: 2px 5px 2px 0;
+}
+
+.mdma-checkbox.active {
+    background-position: -502px -94px;
+}
+
+.auto-x-setting {
+    font-size: 11px;
+    line-height: 21px;
+    width: auto;
+    height: fit-content;
+    display: flex;
+    flex: none;
+    padding-bottom: 5px;
+}
+
+.auto-x-setting.status {
+    justify-content: space-between;
+}
+
+.auto-x-setting.level, .auto-x-setting.coords {
+    line-height: 24px;
+}
+
+.auto-x-setting.coords {
+    padding: 0;
+}
+
+.label {
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+}
+
+.auto-group-content .label {
+    justify-content: left;
+    width: 100%;
+}
+
+.auto-group-content .mdma-text {
+    padding: 0 0 5px 5px;
+}
+
+.auto-group-content .label .mdma-checkbox {
+    margin-left: 10px;
+}
+
+.auto-group-content .label .mdma-text {
+    line-height: 17px;
+    font-size: 12px;
+}
+
+
+.auto-group-content {
+    flex-direction: column;
+}
+
+.window-content.auto-x-content {
+    flex-direction: column;
+}
+
+.mdma-input {
+    color: rgb(245, 245, 220);
+    box-sizing: border-box;
+    background: #0003;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: 0;
+    padding: 2px 3px;
+    line-height: 1.5em;
+    box-shadow: inset 0 0 6px 1px #000000bf;
+    flex: none;
+}
+
+.mdma-input {
+    text-align: center;
+    font-size: 12px;
+    width: 38px;
+    -moz-appearance: textfield;
+}
+
+.mdma-input[type=number]::-webkit-outer-spin-button,
+.mdma-input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari, Edge, Opera */
+    margin: 0;
+}
+
+.mdma-settings-button {
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+    background: url("https://experimental.margonem.pl/img/gui/buttony.png?v=1721980717848") no-repeat -607px -117px;
+    width: 12px;
+    height: 12px;
+}
+
+.mdma-settings-button:hover {
+    background-position: -659px -117px
+}
+
+.settings-window.auto-x .window-content {
+    font-size: 11px;
+    line-height: 17px;
+}

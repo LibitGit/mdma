@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.main-buttons-container .widget-button .icon.MDMA {
+    background-image: url(https://i.imgur.com/uPRFhiX.png);
+    background-position: 0 0;
+}
+
+.interface-layer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    font-family: 'Poppins', Arial, sans-serif;
+    height: 100%;
+    max-height: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 70px;
+    z-index: 2147483647;
+    pointer-events: none;
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/1n.png"), url("https://experimental.margonem.pl/img/gui/cursor/1n.cur"), auto;
+}
+
+.mdma-column {
+    box-sizing: border-box;
+    padding-top: 65px;
+    padding-bottom: 125px;
+    height: 100%;
+    width: fit-content;
+    display: grid;
+    grid-auto-rows: max-content;
+}
+
+.mdma-column *:not(svg) {
+    pointer-events: auto;
+    box-sizing: border-box;
+}
+
+.interface-window {
+    z-index: 2147483647;
+    text-shadow: 1px 1px 1px #000;
+    color: rgb(245, 245, 220);
+    background: rgba(0, 0, 0, 0.7);
+    min-width: 191px;
+    min-height: 22px;
+    font-family: Arimo, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    box-shadow: 0 0 1px #010101, 0 0 0 1px #ccc, 0 0 0 2px #0c0d0d, 1px 1px 2px 2px #0c0d0d66;
+    border-radius: 3px;
+    width: 210px;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 600ms ease-in-out;
+    margin: 4px;
+    pointer-events: auto;
+    overflow: hidden;
+}
+
+.mdma-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 5px;
+}
+
+.mdma-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgb(24, 24, 24);
+    display: flex;
+    width: 210px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mdma-dropdown-toggle {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(245, 245, 220);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    transition: transform 0.3s ease;
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+    transform: rotate(-90deg);
+}
+
+.interface-window.active > .mdma-header > .mdma-dropdown-toggle {
+    transform: rotate(0);
+}
+
+.mdma-dropdown-toggle:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.mdma-content {
+    /*background-color: rgba(31, 31, 31, 0.8);*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: max-height 0.5s cubic-bezier(0, .6, .45, .94);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.interface-window.active > .mdma-content {
+    max-height: 400px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.mdma-content * {
+    padding: 5px 0 5px 0;
+    margin: 0 5px 5px 5px;
+}
+
+.mdma-content .mdma-version, .mdma-content .mdma-build {
+    font-size: 14px;
+    padding: 0;
+    align-self: flex-start;
+}
+
+.widget-label {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.mdma-github-button, .mdma-discord-button {
+    background-color: #6a5acd;
+    color: rgb(245, 245, 220);
+    border: none;
+    border-radius: 3px;
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+    font-size: 14px;
+}
+
+.mdma-github-button:hover, .mdma-discord-button:hover {
+    background-color: #5a4aad;
+}
+
+.mdma-search {
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 1px solid #6a5acd;
+    border-radius: 1px;
+    color: rgb(245, 245, 220);
+    margin: 5px;
+    padding: 0 5px 0 5px;
+}
+
+.mdma-addons-wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgb(245, 245, 220);
+    text-align: center;
+}
+
+.mdma-addon {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    color: rgb(245, 245, 220);
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+    font-size: 14px;
+}
+
+.mdma-addon:hover {
+    border-color: #5a4aad;
+}
+
+.mdma-addon.active {
+    color: #6a5acd;
+}
+
+.addon-title {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.addons-positioner {
+    width: 100%;
+    height: 12px;
+    margin: 0;
+    padding: 0 6px 6px 0;
+    display: flex;
+    column-gap: 3px;
+    justify-content: end;
+}
+
+#mdma-console-content {
+    width: 100%;
+    max-height: 0;
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*test*/
+    justify-content: end;
+    align-items: start;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 2px;
+}
+
+.interface-window.active > #mdma-console-content {
+    max-height: 100px;
+}
+
+.mdma-console-text {
+    font-size: 8px;
+    margin-bottom: 0;
+    padding: 5px 0 0 0;
+    line-height: 1em;
+}
+
+.mdma-copy-button {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+}
+
+.mdma-checkbox {
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+    background: url("https://experimental.margonem.pl/img/gui/buttony.png") -484px -94px no-repeat;
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    margin: 0 6px 0 6px;
+    flex: none;
+}
+
+.mdma-checkbox.active {
+    background-position: -502px -94px;
+}
+
+.mdma-close-button {
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+    background: url("https://experimental.margonem.pl/img/gui/buttony.png") no-repeat -624px -117px;
+    width: 12px;
+    height: 12px;
+}
+
+.mdma-close-button:hover {
+    background-position: -726px -117px;
+}
+
+.config-window-toggle {
+    background: url("https://experimental.margonem.pl/img/gui/buttony.png") no-repeat -465px -399px;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.config-window-toggle:hover {
+    background-position: -433px -399px;
+}
+
+.mdma-settings-button {
+    cursor: url("https://experimental.margonem.pl/img/gui/cursor/5n.png") 4 0, url("https://experimental.margonem.pl/img/gui/cursor/5n.cur") 4 0, auto;
+    background: url("https://experimental.margonem.pl/img/gui/buttony.png?v=1721980717848") no-repeat -607px -117px;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.mdma-settings-button:hover {
+    background-position: -659px -117px
+}
