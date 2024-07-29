@@ -56,13 +56,13 @@
     }
 
     async function instantiateWebAssembly() {
-        const {default: init, init_mdma} = await import(`http://localhost:3000/mdma/foreground.js?c=${cacheToken}`);
+        const {default: init, init_mdma} = await import(`https://libit.ovh/mdma/foreground.js?c=${cacheToken}`);
         console.log("%cMDMA FOREGROUND FETCHED", 'color:gold', performance.now());
 
         // DEBUG
         const start = performance.now();
 
-        await init(`http://localhost:3000/mdma/foreground_bg.wasm?c=${cacheToken}`);
+        await init(`https://libit.ovh/mdma/foreground_bg.wasm?c=${cacheToken}`);
 
         // DEBUG
         console.log(`%cMDMA FOREGROUND INIT TOOK ${performance.now() - start}ms`, 'color:gold');

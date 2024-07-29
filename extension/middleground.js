@@ -19,10 +19,10 @@
     // DEBUG
     cacheToken = Date.now();
 
-    const {default: init} = await import(`http://localhost:3000/mdma/middleground.js?c=${cacheToken}`);
+    const {default: init} = await import(`https://libit.ovh/mdma/middleground.js?c=${cacheToken}`);
     console.log("MDMA MIDDLEGROUND FETCHED", performance.now());
 
     let start = performance.now();
-    await init(`http://localhost:3000/mdma/middleground_bg.wasm?c=${cacheToken}`);
+    await init(`https://libit.ovh/mdma/middleground_bg.wasm?c=${cacheToken}`);
     console.log(`Middleground init took ${performance.now() - start}ms`);
 })();
