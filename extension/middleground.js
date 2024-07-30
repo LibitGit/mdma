@@ -18,11 +18,25 @@
 
     // DEBUG
     cacheToken = Date.now();
+    let port = chrome.runtime.connect({name: "middleground"});
 
-    const {default: init} = await import(`https://libit.ovh/mdma/middleground.js?c=${cacheToken}`);
-    console.log("MDMA MIDDLEGROUND FETCHED", performance.now());
+    let jd = function(msg) {
+        let handle = (event) => {
+            console.log(event)
+            window.dispatchEvent(new CustomEvent("mdma_id", {detail: {value: msg}}))
 
-    let start = performance.now();
-    await init(`https://libit.ovh/mdma/middleground_bg.wasm?c=${cacheToken}`);
-    console.log(`Middleground init took ${performance.now() - start}ms`);
+            window.removeEventListener("mdma_foreground_init", handle)
+        }
+        console.log(msg);
+        window.addEventListener("mdma_foreground_init", handle)
+    }
+
+    port.onMessage.addListener(jd)
+
+    // const {default: init} = await import(`https://libit.ovh/mdma/middleground.js?c=${cacheToken}`);
+    // console.log("MDMA MIDDLEGROUND FETCHED", performance.now());
+    //
+    // let start = performance.now();
+    // await init(`https://libit.ovh/mdma/middleground_bg.wasm?c=${cacheToken}`);
+    // console.log(`Middleground init took ${performance.now() - start}ms`);
 })();

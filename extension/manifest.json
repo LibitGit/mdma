@@ -3,7 +3,7 @@
   "name": "MDMA DEV",
   "description": "Multipurpose Discord to Margonem Addons",
   "content_security_policy": {
-    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+    "extension_pages": "script-src 'wasm-unsafe-eval';"
   },
   "version": "0.1.4",
   "permissions": [
