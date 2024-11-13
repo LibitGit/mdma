@@ -1,9 +1,41 @@
 # Changelog
+
+## MDMA 0.1.5-test (2024/11/13)
+
+### Added
+- `UI`: in-game chat responsiveness.
+- `UI`: signal handling for all components.
+- `Better Messages`: added a config window.
+- `Accept Summon`: automatically accept designated summon requests.
+- `Accept Group`: incoming party invite handling.
+- `Better Group Invites`: outgoing party invite handling. 
+- `Popup`: for user authentication.
+
+### Changed
+- `Auto Group`: split into two addons, `Accept Group` and `Better Group Invites`.
+- `Service Worker`: incoming events handling, which previously did not cause the worker to wake up.
+
+### Fixed
+- `UI`: window positioning on open from manager and within another window.
+- `UI`: addon windows can no longer be moved by dragging any of the decor elements.
+- `UI`: tip bounding box is now restricted to the viewport.
+
+### Internal
+- Updated error handling and messaging.
+- Partially removed multithreading support, shrinking the WASM code size by ~60%. 
+- Added (partial) string obfuscation to WASM.
+- WASM tries to instantiate before the setting of `communication` and `Engine` modules.
+- Peers vector no longer retains data from previous location.
+- WASM instantiation no longer stops similar game-init blocking scripts from working.
+- Created a framework for managing DOM nodes.
+- Created a library for WebExtension API bindings.
+- Created a framework for communication between extension contexts.
+
 ## MDMA 0.1.4-test (2024/07/29)
 
 ### Added
 - `Auto-X`: early release for testing the windows UI.
-- `Custom Alert Message`: smaller and unclickable game messages.
+- `Better Messages`: configurable game messages.
 - `Signed Custom Teleports`: adds a location alias over every custom teleport item.
 - Console inside the UI for better bug reporting experience.
 

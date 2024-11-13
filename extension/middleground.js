@@ -1,11 +1,4 @@
 (async () => {
-    // DEBUG
-    if (window.mdma) {
-        return;
-    }
-    window.mdma ||= {};
-    window.mdma.middleground = true;
-
     console.log("MDMA MIDDLEGROUND INJECTED", performance.now());
     // DEBUG END
 
@@ -20,18 +13,18 @@
     cacheToken = Date.now();
     let port = chrome.runtime.connect({name: "middleground"});
 
-    let jd = function(msg) {
-        let handle = (event) => {
-            console.log(event)
+    port.onDisconnect.addListener(console.log);
+    
+    console.log("MIDDLEGROUND CONNECTED TO PORT")
+    port.onMessage.addListener(function (msg) {
+        let handle = () => {
             window.dispatchEvent(new CustomEvent("mdma_id", {detail: {value: msg}}))
-
+            
+            console.log("mdma_id EVENT DISPATCHED")
             window.removeEventListener("mdma_foreground_init", handle)
         }
-        console.log(msg);
         window.addEventListener("mdma_foreground_init", handle)
-    }
-
-    port.onMessage.addListener(jd)
+    })
 
     // const {default: init} = await import(`https://libit.ovh/mdma/middleground.js?c=${cacheToken}`);
     // console.log("MDMA MIDDLEGROUND FETCHED", performance.now());
