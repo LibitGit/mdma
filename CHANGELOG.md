@@ -1,5 +1,25 @@
 # Changelog
 
+## MDMA 0.1.6-test (2024/11/17)
+
+### Added
+
+### Changed
+- `Console` Copying logs now provides up to 500 latest margonem server responses.
+
+### Fixed
+- `Better Group Invites`: inviting by nick is no longer case sensitive.
+- `Accept Group`: updated window layout.
+- `Accept Summon`: updated window layout.
+- `Accept X`: updated window layout.
+- `Better Group Invites`: updated window layout.
+- `Better Messages`: updated window layout.
+- `Better Who Is Here`: updated window layout.
+- `Signed Custom Teleports`: updated window layout.
+
+### Internal
+- Refactored addon/setting windows creation methods.
+
 ## MDMA 0.1.5-test (2024/11/13)
 
 ### Added
@@ -25,7 +45,7 @@
 - Partially removed multithreading support, shrinking the WASM code size by ~60%. 
 - Added (partial) string obfuscation to WASM.
 - WASM tries to instantiate before the setting of `communication` and `Engine` modules.
-- Peers vector no longer retains data from previous location.
+- Peers map no longer retains data from previous location.
 - WASM instantiation no longer stops similar game-init blocking scripts from working.
 - Created a framework for managing DOM nodes.
 - Created a library for WebExtension API bindings.
