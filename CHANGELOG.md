@@ -1,5 +1,25 @@
 # Changelog
 
+## MDMA 0.1.7-test (2024/11/22)
+
+### Added
+- `Signed Custom Teleports`: new/updated mob positions.
+
+### Changed
+- Foreground content script is now instantiated through a function instead of a file.
+
+### Fixed 
+- Requests no longer interrupt logoff.
+- `Better Group Invites`: hotkey checkboxes unchecking.
+
+### Internal
+- Added caching for most string slices.
+- Peers map updates on every peer join/leave instantaneously.
+- Added WASM module compression.
+- Emotion removal futures get canceled after a reload task is received.
+- Engine properties are now accessed using wasm-bindgen instead of serde, resulting in a significant improvement in overall performance.
+- Removed the observe method from Emitter, due to function differences in Rust and Java Script.
+
 ## MDMA 0.1.6-test (2024/11/17)
 
 ### Added

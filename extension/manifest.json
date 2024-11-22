@@ -5,7 +5,7 @@
   "content_security_policy": {
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
   },
-  "version": "0.1.6",
+  "version": "0.1.7",
   "permissions": [
     "tabs",
     "activeTab",
@@ -14,7 +14,8 @@
     "debugger"
   ],
   "host_permissions": [
-    "https://*.margonem.pl/"
+    "https://*.margonem.pl/",
+    "http://localhost:3000/*"
   ],
   "background": {
     "type": "module",
@@ -22,7 +23,8 @@
   },
   "externally_connectable": {
     "matches": [
-      "https://*.margonem.pl/"
+      "https://*.margonem.pl/",
+      "http://localhost:3000/*"
     ]
   },
   "action": {
@@ -42,141 +44,6 @@
       "matches": [
         "<all_urls>"
       ]
-    }
-  ],
-  "content_scripts": [
-    {
-      "js": [
-        "foreground.js"
-      ],
-      "world": "MAIN",
-      "matches": [
-        "https://experimental.margonem.pl/",
-        "https://aether.margonem.pl/",
-        "https://aldous.margonem.pl/",
-        "https://berufs.margonem.pl/",
-        "https://brutal.margonem.pl/",
-        "https://classic.margonem.pl/",
-        "https://fobos.margonem.pl/",
-        "https://gefion.margonem.pl/",
-        "https://gordion.margonem.pl/",
-        "https://hutena.margonem.pl/",
-        "https://jaruna.margonem.pl/",
-        "https://katahha.margonem.pl/",
-        "https://lelwani.margonem.pl/",
-        "https://majuna.margonem.pl/",
-        "https://nomada.margonem.pl/",
-        "https://perkun.margonem.pl/",
-        "https://tarhuna.margonem.pl/",
-        "https://telawel.margonem.pl/",
-        "https://tempest.margonem.pl/",
-        "https://zemyna.margonem.pl/",
-        "https://zorza.margonem.pl/",
-    
-        "https://alcatraz.margonem.pl/",
-        "https://arkantes.margonem.pl/",
-        "https://arkantes.margonem.pl/",
-        "https://astraja.margonem.pl/",
-        "https://asylum.margonem.pl/",
-        "https://ataenstic.margonem.pl/",
-        "https://badzior.margonem.pl/",
-        "https://dionizos.margonem.pl/",
-        "https://elizjum.margonem.pl/",
-        "https://ertill.margonem.pl/",
-        "https://eternia.margonem.pl/",
-        "https://febris.margonem.pl/",
-        "https://hades.margonem.pl/",
-        "https://helios.margonem.pl/",
-        "https://inferno.margonem.pl/",
-        "https://latimar.margonem.pl/",
-        "https://legion.margonem.pl/",
-        "https://lupus.margonem.pl/",
-        "https://mordor.margonem.pl/",
-        "https://narwhals.margonem.pl/",
-        "https://navis.margonem.pl/",
-        "https://nerthus.margonem.pl/",
-        "https://nexos.margonem.pl/",
-        "https://nubes.margonem.pl/",
-        "https://nyras.margonem.pl/",
-        "https://odysea.margonem.pl/",
-        "https://orchidea.margonem.pl/",
-        "https://pandora.margonem.pl/",
-        "https://regros.margonem.pl/",
-        "https://riventia.margonem.pl/",
-        "https://stark.margonem.pl/",
-        "https://stoners.margonem.pl/",
-        "https://syberia.margonem.pl/",
-        "https://thantos.margonem.pl/",
-        "https://unia.margonem.pl/",
-        "https://valhalla.margonem.pl/"
-      ],
-      "run_at": "document_start"
-    },
-    {
-      "js": [
-        "middleground.js"
-      ],
-      "matches": [
-        "https://experimental.margonem.pl/",
-        "https://aether.margonem.pl/",
-        "https://aldous.margonem.pl/",
-        "https://berufs.margonem.pl/",
-        "https://brutal.margonem.pl/",
-        "https://classic.margonem.pl/",
-        "https://fobos.margonem.pl/",
-        "https://gefion.margonem.pl/",
-        "https://gordion.margonem.pl/",
-        "https://hutena.margonem.pl/",
-        "https://jaruna.margonem.pl/",
-        "https://katahha.margonem.pl/",
-        "https://lelwani.margonem.pl/",
-        "https://majuna.margonem.pl/",
-        "https://nomada.margonem.pl/",
-        "https://perkun.margonem.pl/",
-        "https://tarhuna.margonem.pl/",
-        "https://telawel.margonem.pl/",
-        "https://tempest.margonem.pl/",
-        "https://zemyna.margonem.pl/",
-        "https://zorza.margonem.pl/",
-    
-        "https://alcatraz.margonem.pl/",
-        "https://arkantes.margonem.pl/",
-        "https://arkantes.margonem.pl/",
-        "https://astraja.margonem.pl/",
-        "https://asylum.margonem.pl/",
-        "https://ataenstic.margonem.pl/",
-        "https://badzior.margonem.pl/",
-        "https://dionizos.margonem.pl/",
-        "https://elizjum.margonem.pl/",
-        "https://ertill.margonem.pl/",
-        "https://eternia.margonem.pl/",
-        "https://febris.margonem.pl/",
-        "https://hades.margonem.pl/",
-        "https://helios.margonem.pl/",
-        "https://inferno.margonem.pl/",
-        "https://latimar.margonem.pl/",
-        "https://legion.margonem.pl/",
-        "https://lupus.margonem.pl/",
-        "https://mordor.margonem.pl/",
-        "https://narwhals.margonem.pl/",
-        "https://navis.margonem.pl/",
-        "https://nerthus.margonem.pl/",
-        "https://nexos.margonem.pl/",
-        "https://nubes.margonem.pl/",
-        "https://nyras.margonem.pl/",
-        "https://odysea.margonem.pl/",
-        "https://orchidea.margonem.pl/",
-        "https://pandora.margonem.pl/",
-        "https://regros.margonem.pl/",
-        "https://riventia.margonem.pl/",
-        "https://stark.margonem.pl/",
-        "https://stoners.margonem.pl/",
-        "https://syberia.margonem.pl/",
-        "https://thantos.margonem.pl/",
-        "https://unia.margonem.pl/",
-        "https://valhalla.margonem.pl/"
-      ],
-      "run_at": "document_start"
     }
   ]
 }

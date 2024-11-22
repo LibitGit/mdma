@@ -101,7 +101,7 @@ loginBtn.addEventListener('click', async () => {
             "target": "Background"
         });
 
-        const authUrl = `https://libit.ovh/login/${uuid}`;
+        const authUrl = `http://localhost:3000/login/${uuid}`;
 
         // Open a popup window
         const width = Math.min(800, screen.width * 0.9);
