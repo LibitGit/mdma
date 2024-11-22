@@ -15,6 +15,7 @@
   ],
   "host_permissions": [
     "https://*.margonem.pl/",
+    "https://libit.ovh/*",
     "http://localhost:3000/*"
   ],
   "background": {
@@ -24,6 +25,7 @@
   "externally_connectable": {
     "matches": [
       "https://*.margonem.pl/",
+      "https://libit.ovh/*",
       "http://localhost:3000/*"
     ]
   },
