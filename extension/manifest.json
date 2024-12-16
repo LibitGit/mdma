@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "MDMA DEV",
+  "name": "MDMA",
   "description": "Multipurpose Discord to Margonem Addons",
   "content_security_policy": {
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; script-src-elem 'self' http://localhost:3000/ https://libit.ovh/"
