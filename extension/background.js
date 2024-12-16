@@ -1,6 +1,6 @@
 import __wbg_init, { handlePortConnect, handleActionClick, handleMessage, handleTabsUpdated } from "https://libit.ovh/mdma/background.js";
 
-let module_or_path = {module_or_path: `https://libit.ovh/mdma/background_bg.wasm?c=${Date.now()}`};
+let module_or_path = {module_or_path: `https://libit.ovh/mdma/background_bg.wasm.br?c=${Date.now()}`};
 let init = new Promise((res, rej) => __wbg_init(module_or_path).then(res).catch(rej));
 
 init.catch(console.error)
