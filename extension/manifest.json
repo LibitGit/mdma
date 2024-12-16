@@ -1,21 +1,21 @@
 {
   "manifest_version": 3,
-  "name": "MDMA",
+  "name": "MDMA DEV",
   "description": "Multipurpose Discord to Margonem Addons",
   "content_security_policy": {
-    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; script-src-elem 'self' http://localhost:3000/ https://libit.ovh/"
   },
-  "version": "0.1.7",
+  "version": "0.9.0",
   "permissions": [
     "tabs",
     "activeTab",
+    "cookies",
     "scripting",
     "storage",
     "debugger"
   ],
   "host_permissions": [
     "https://*.margonem.pl/",
-    "https://libit.ovh/*",
     "http://localhost:3000/*"
   ],
   "background": {
@@ -25,7 +25,6 @@
   "externally_connectable": {
     "matches": [
       "https://*.margonem.pl/",
-      "https://libit.ovh/*",
       "http://localhost:3000/*"
     ]
   },

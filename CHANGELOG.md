@@ -1,6 +1,21 @@
 # Changelog
 
-## MDMA 0.1.7-test (2024/11/22)
+## MDMA 0.9.0-test (2024/12/22)
+
+### Added
+- Functionality to save addon settings after each change.
+- `Popup`: implemented login system via discord account.
+
+### Changed
+- `Better Group Invites`: validate the current candidate at every iteration of the invite loop, rather than only at the start of the loop.
+
+### Fixed 
+
+### Internal
+- Updated error handling and messaging.
+- Updated manager initialization mechanism.
+
+## MDMA 0.8.0-test (2024/11/22)
 
 ### Added
 - `Signed Custom Teleports`: new/updated mob positions.
@@ -20,7 +35,7 @@
 - Engine properties are now accessed using wasm-bindgen instead of serde, resulting in a significant improvement in overall performance.
 - Removed the observe method from Emitter, due to function differences in Rust and Java Script.
 
-## MDMA 0.1.6-test (2024/11/17)
+## MDMA 0.7.0-test (2024/11/17)
 
 ### Added
 
@@ -40,7 +55,7 @@
 ### Internal
 - Refactored addon/setting windows creation methods.
 
-## MDMA 0.1.5-test (2024/11/13)
+## MDMA 0.6.0-test (2024/11/13)
 
 ### Added
 - `UI`: in-game chat responsiveness.
@@ -71,7 +86,7 @@
 - Created a library for WebExtension API bindings.
 - Created a framework for communication between extension contexts.
 
-## MDMA 0.1.4-test (2024/07/29)
+## MDMA 0.5.0-test (2024/07/29)
 
 ### Added
 - `Auto-X`: early release for testing the windows UI.
@@ -93,7 +108,7 @@
 - Every UI HTML element gets rendered inside a shadow DOM.
 - Implemented proper communication between the game, and the extension's background script.
 
-## MDMA 0.1.3-test (2024/06/16)
+## MDMA 0.4.0-test (2024/06/16)
 
 ### Added
 
@@ -104,7 +119,7 @@
 ### Internal
 - MDMA now works server-side (partially)!
 
-## MDMA 0.1.2-test (2024/06/03)
+## MDMA 0.3.0-test (2024/06/03)
 
 ### Added
 
@@ -116,7 +131,7 @@
 ### Internal
 - Added a graphical interface.
 
-## MDMA 0.1.1-test (2024/05/27)
+## MDMA 0.2.0-test (2024/05/27)
 
 ### Added
 
