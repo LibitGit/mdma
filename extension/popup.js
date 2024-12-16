@@ -1,8 +1,9 @@
 //TODO: Implement actual caching behavior.
 const cacheToken = Date.now();
 const src = decodeURIComponent(window.location.hash.slice(1));
+const moduleUrl = chrome.runtime.getURL('popup_module.js');
 
-const initJS = new Promise((res, rej) => import(src + `/popup.js?c=${cacheToken}`).then(res).catch(rej));
+const initJS = new Promise((res, rej) => import(moduleUrl).then(res).catch(rej));
 
 //TODO: Use encoded version in release.
 const module_or_path = { module_or_path: src + `/popup_bg.wasm.br?c=${cacheToken}` };

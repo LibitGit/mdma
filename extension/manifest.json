@@ -3,7 +3,7 @@
   "name": "MDMA",
   "description": "Multipurpose Discord to Margonem Addons",
   "content_security_policy": {
-    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; script-src-elem 'self' http://localhost:3000/ https://libit.ovh/"
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
   },
   "version": "0.9.0",
   "permissions": [
@@ -45,6 +45,10 @@
       "matches": [
         "<all_urls>"
       ]
+    },
+    {
+      "resources": [ "popup_module.js", "popup_bg.wasm.br" ],
+      "matches": [ "<all_urls>" ]
     }
   ]
 }
