@@ -1,5 +1,19 @@
 # Changelog
 
+## MDMA 0.9.1-test (2024/12/17)
+
+### Dodano
+- Komunikat w przypadku nieudanej inicjalizacji zestawu.
+
+### Zmieniono
+- Komunikat w przypadku zbyt niskiego poziomu dostępu.
+
+### Naprawiono
+- Sprawdzanie tego czy dodatek jest aktywny.
+
+### Zmiany wewnętrzne
+- Poprawiono wewnętrzną funkcjonalność odpowiadającą za inicjalizacje zestawu.
+
 ## MDMA 0.9.0-test (2024/12/16)
 
 ### Dodano
@@ -32,7 +46,7 @@
 - Dane o rówieśnikach aktualizują się natychmiastowo po wejściu/wyjściu z gry rówieśnika.
 - Zaimplementowano kompresję Brotli w module WASM.
 - `Future` odpowiedzialny za usunięcie emocji zostaje przerwany w przypadku, gdy serwer gry zwróci `task: "reload"`.
-- Zmieniono odczytywanie właściwości obiektów gry z parsowania  przy użyciu `serde` na korzystanie z powiązań wygenerowanych przez `wasm-bindgen`. Rezultatem tej zmiany jest znaczna poprawa ogólnej wydajności.
+- Zmieniono odczytywanie właściwości obiektów gry z parsowania przy użyciu `serde` na korzystanie z powiązań wygenerowanych przez `wasm-bindgen`. Rezultatem tej zmiany jest znaczna poprawa ogólnej wydajności.
 
 ## MDMA 0.7.0-test (2024/11/17)
 
