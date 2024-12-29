@@ -1,15 +1,31 @@
 # Changelog
 
+## MDMA 0.10.0-test (2024/12/17)
+
+### Dodano
+- NOWOŚĆ `Kastrat`: kamil odpalaj kastrata bo mi cwele na expowisko wbiły.
+- `Widget`: możliwość otwarcia menu rozszerzenia za pomocą prawego przycisku myszy (PPM), niezależnie od statusu zalogowania użytkownika.
+
+### Zmieniono
+- Komunikat w przypadku błędu podczas inicjalizacji zestawu.
+
+### Naprawiono
+- `Manager`: opcję wyłączania widżetu.
+
+### Zmiany wewnętrzne
+- Dodano funkcjonalność znacząco usprawniającą wczytywanie oraz zapisywanie ustawień dodatków.
+- Arkusze styli zostały przeniesione na serwer.
+
 ## MDMA 0.9.1-test (2024/12/17)
 
 ### Dodano
-- Komunikat w przypadku nieudanej inicjalizacji zestawu.
+- `Manager`: komunikat w przypadku nieudanej inicjalizacji zestawu.
 
 ### Zmieniono
-- Komunikat w przypadku zbyt niskiego poziomu dostępu.
+- `Manager`: komunikat w przypadku zbyt niskiego poziomu dostępu.
 
 ### Naprawiono
-- Sprawdzanie tego czy dodatek jest aktywny.
+- `Manager`: sprawdzanie stanu aktywności dodatku.
 
 ### Zmiany wewnętrzne
 - Poprawiono wewnętrzną funkcjonalność odpowiadającą za inicjalizacje zestawu.
