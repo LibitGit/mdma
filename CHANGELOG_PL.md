@@ -1,6 +1,36 @@
 # Changelog
 
-## MDMA 0.10.0-test (2024/12/17)
+## MDMA 0.11.0-test (2025/01/24)
+
+### Dodano
+- NOWOŚĆ `Znacznik`: dodatek umożliwia konfigurowanie ikon oraz podpisów przedmiotów z gry
+    - aliasy lokacji oraz ikony potworów nad każdym przedmiotem z kategorii `custom_teleport`,
+    - ikony typów obrażeń broni,
+    - edytowanie ikon, podpisów oraz rzadkości przedmiotów bohatera.
+- `Kastrat`: możliwość atakowania graczy poszukiwanych listem gończym w lokacjach z warunkowym PvP.
+- `Service Worker`: zmiany w ustawieniach dodatków są teraz wysyłane do serwera w pakietach co 150ms.
+
+### Zmieniono
+- `Better Group Invites`: klanowicze oraz przyjaciele z tej samej lokacji są od teraz zapraszani niezależnie od ich odległości od bohatera.
+- `Signed Custom Teleports`: usunięto dodatek.
+
+### Naprawiono
+- `Kastrat`: niepoprawne wykrywanie trybu PvP obecnej lokacji.
+- `Manager`: błąd podczas tworzenia nowej grupy.
+- `Manager`: niepoprawne pozycjonowanie okien w przypadku zbyt małego viewportu.
+- `Manager`: niepoprawne wyświetlanie tipu po usunięciu elementu odpowiającego za jego renderowanie.
+- `Service Worker`: rozbudzanie workera poprzez zmianę ustawień któregokolwiek dodatku.
+
+### Zmiany wewnętrzne
+- Dodano minifikowanie kodu plików z rozszerzeniami `.js`.
+- `Service Worker`: zaimplementowano kolejkowanie wiadomości wysyłanych do serwera w przypadku zbyt częstego aktualizowania np. ustawień dodatku.
+- Tymczasowo zrezygnowano z enkodowania plików z rozszerzeniami `.wasm`.
+- Dodano nowy tryb dla komponentu `Input` - `game-item` pozwalający na modyfikowanie przedmiotów z gry z poziomu shadow DOM tree.
+- `Manager`: okna dodatków są teraz renderowane po wysłaniu eventu `AFTER_INTERFACE_START` przez obiekt `API`.
+- Wskaźnik odnoszący się do danych globalnych zestawu jest teraz celowo wyciekany, znacząco zwiększając ogólną wydajność.
+- Dodano funkcjonalność pozwalającą na przechowywanie zmiennych `BTreeMap` jako obiekt `JSON` do makr proceduralnych odpowiadających za automatyczne komunikowanie zmian w dodatkach.
+
+## MDMA 0.10.0-test (2024/12/30)
 
 ### Dodano
 - NOWOŚĆ `Kastrat`: kamil odpalaj kastrata bo mi cwele na expowisko wbiły.
