@@ -5,7 +5,7 @@
   "content_security_policy": {
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
   },
-  "version": "0.10.0",
+  "version": "0.11.0",
   "permissions": [
     "tabs",
     "activeTab",
@@ -15,8 +15,7 @@
     "debugger"
   ],
   "host_permissions": [
-    "https://*.margonem.pl/",
-    "http://localhost:3000/*"
+    "https://*.margonem.pl/"
   ],
   "background": {
     "type": "module",
@@ -24,8 +23,7 @@
   },
   "externally_connectable": {
     "matches": [
-      "https://*.margonem.pl/",
-      "http://localhost:3000/*"
+      "https://*.margonem.pl/"
     ]
   },
   "action": {
@@ -39,15 +37,7 @@
   "minimum_chrome_version": "102",
   "web_accessible_resources": [
     {
-      "resources": [
-        "/styles/*"
-      ],
-      "matches": [
-        "<all_urls>"
-      ]
-    },
-    {
-      "resources": [ "popup_module.js", "popup_bg.wasm.br" ],
+      "resources": [ "popup_js.js", "index-BmWsMfXY.js", "assets/popup-CUcwwp7T.wasm" ],
       "matches": [ "<all_urls>" ]
     }
   ]
