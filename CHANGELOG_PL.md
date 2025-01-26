@@ -1,5 +1,18 @@
 # Changelog
 
+## MDMA 0.11.1-test (2025/01/27)
+
+### Dodano
+
+### Zmieniono
+- `Manager`: implementacje ustawień postaci przystosowując je do obecnej wersji gry.
+- `Manager`: tymczasowo usunięto wyświetlanie błędu w sytuacji, gdy emocja gracza powinna zostać usunięta z listy emocji, ale lista została już wyczyszczona, np. wskutek opuszczenia mapy przez gracza.
+
+### Naprawiono
+
+### Zmiany wewnętrzne
+- Dodano generowanie kodów błedu w przypadku wystąpienia błędu wewnątrz funkcji `onMessageWebSocket`.
+
 ## MDMA 0.11.0-test (2025/01/24)
 
 ### Dodano
