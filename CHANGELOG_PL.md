@@ -1,5 +1,17 @@
 # Changelog
 
+## MDMA 0.11.2-test (2025/01/27)
+
+### Dodano
+
+### Zmieniono
+
+### Naprawiono
+
+### Zmiany wewnętrzne
+- Tymczasowo wyłączono cachowanie modułu `foreground`.
+- Zmieniono sposób inicjalizacji zestawu. Wszystkie funkcjonalności zostają wczytane przed wysłaniem pierwszego żądania do serwera gry.
+
 ## MDMA 0.11.1-test (2025/01/27)
 
 ### Dodano
