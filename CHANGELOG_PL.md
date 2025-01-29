@@ -1,5 +1,23 @@
 # Changelog
 
+## MDMA 0.11.3 (2025/01/29)
+
+### Dodano
+
+### Zmieniono
+- `Better Group Invites`: zapraszanie oraz zapraszanie masowe według profesji:
+    - w przypadku, gdy dodatek nie może określić profesji członka grupy aktualna, liczba dostępnych miejsc dla danej profesji pozostaje niezmieniona. 
+- `Znacznik`: domyślną ikonę dla aliasów mapy **Grota Caerbannoga** na starą ikonę tytana **Zabójczy królik**.
+
+### Naprawiono
+- `Better Group Invites`: sprawdzanie czy kandydat jest już w grupie w przypadku, gdy bohater był poprzednio w grupie, ale aktualnie nie jest.
+- `Better Messages`: wyłączanie interakcji z tekstem.
+- `Kastrat`: sprawdzanie czy kandydat na cel znajduje się w grupie z bohaterem.
+
+### Zmiany wewnętrzne
+- Dodano własny seed używany podczas hashowania zmiennych typu **string**.
+- Usunięto wszystkie ścieżki absolutne z modułów WASM.
+
 ## MDMA 0.11.2-test (2025/01/27)
 
 ### Dodano

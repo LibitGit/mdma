@@ -5,7 +5,7 @@
   "content_security_policy": {
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
   },
-  "version": "0.11.2",
+  "version": "0.11.3",
   "permissions": [
     "tabs",
     "activeTab",
@@ -37,7 +37,7 @@
   "minimum_chrome_version": "102",
   "web_accessible_resources": [
     {
-      "resources": [ "popup_js.js", "index-BmWsMfXY.js", "assets/popup-CUcwwp7T.wasm" ],
+      "resources": [ "popup_js.js", "index-BL9VTdYh.js", "assets/popup-1LIZ4gCT.wasm" ],
       "matches": [ "<all_urls>" ]
     }
   ]
