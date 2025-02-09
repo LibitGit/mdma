@@ -1,5 +1,19 @@
 # Changelog
 
+## MDMA 0.11.3 (2025/02/09)
+
+### Dodano
+- TBA
+
+### Zmieniono
+- TBA
+
+### Naprawiono
+- TBA
+
+### Zmiany wewnętrzne
+- TBA
+
 ## MDMA 0.11.3 (2025/01/29)
 
 ### Dodano
