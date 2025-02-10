@@ -18,6 +18,7 @@
 - `Accept Group`: zmieniono nazwę dodatku na `Akceptowanie zaproszeń do drużyny`.
 - `Accept Summon`: zmieniono nazwę dodatku na `Akceptowanie przywołań`.
 - `Better Group Invites`: zmieniono nazwę dodatku na `Zapraszanie do drużyny`.
+- `Better Messages`: zmieniono nazwę dodatku na `Poprawione powiadomienia`.
 - `Better Who Is Here`: zmieniono nazwę dodatku na `Gracze na mapie`.
 - `Manager`: odświeżono wygląd menadżera.
 
