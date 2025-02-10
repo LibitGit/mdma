@@ -1,18 +1,38 @@
 # Changelog
 
-## MDMA 0.11.3 (2025/02/09)
+## MDMA 0.12.0 (2025/02/09)
 
 ### Dodano
-- TBA
+- `Gracze na mapie`: dodano nowe menu kontekstowe `Dobijaj` pozwalające na obranie danego gracza za cel.
+    - Po wybraniu tej opcji bohater podejdzie do celu i będzie go atakować, dopóki m.in. przeciwnik się nie teleportuje lub nie rozpocznie się walka.
+- `Gracze na mapie`: dodano wyświetlanie klanu gracza wewnątrz tipa.
+- `Kastrat`: dodano możliwość wyłączenia atakowania celu z poziomu okna dodatku.
+- NOWOŚĆ `Super Rzemieślnik`: dodatek pozwala wykorzystać przedmioty z łupu lub ekwipunku jako składniki do ulepszania.
+    - Automatyczne ulepszanie przedmiotów umieszczonych w oknie dodatku przy użyciu wybranych typów łupów z potworów.
+    - Przycisk **Ulepsz** umożliwiający ulepszanie przedmiotami o rzadkości wyższej niż pospolita w dowolnym momencie.
+- `Znacznik`: dodano możliwość zmiany rzadkości własnych znaczników.
+- `Znacznik`: dodano animacje wewnątrz oraz przy wyborze własnych znaczników.
+
 
 ### Zmieniono
-- TBA
+- `Accept Group`: zmieniono nazwę dodatku na `Akceptowanie zaproszeń do drużyny`.
+- `Accept Summon`: zmieniono nazwę dodatku na `Akceptowanie przywołań`.
+- `Better Group Invites`: zmieniono nazwę dodatku na `Zapraszanie do drużyny`.
+- `Better Who Is Here`: zmieniono nazwę dodatku na `Gracze na mapie`.
+- `Manager`: odświeżono wygląd menadżera.
 
 ### Naprawiono
-- TBA
+- `Kastrat`: naprawiono niepoprawne wyświetlanie okna dodatku w przypadku wyłączonego dodatku. 
+- `Service Worker`: naprawiono niezamierzone wstrzykiwanie zestawu na subdomenach `commons` oraz `dev-commons`.
+- `Znacznik`: naprawiono niewyświetlanie własnych znaczników.
 
 ### Zmiany wewnętrzne
-- TBA
+- Dodano nowy tryb dla komponentu `Input` - `slider` pozwalający na wybór wartości z zakresu.
+- Dodano responsywność ramek oraz nakładek przedmiotów wewnątrz komponentu `Input`.
+- Dodano śledzenie lokalizacji wewnątrz anonimowych funkcji za pomocą bramki `#![feature(closure_track_caller)]`.
+- Naprawiono niezamierzone wywoływanie błędu, gdy zestaw nie był w stanie określić profesji gracza z grupy.
+- Poprawiono mechanizm czyszczenia zmiennych globalnych przy zmianie lokacji.
+- Poprawiono mechanizm wykrywania czy bohater jest w grupie lub opuszcza grę.
 
 ## MDMA 0.11.3 (2025/01/29)
 
