@@ -1,4 +1,31 @@
-# Changelog
+# Multipurpose Discord to Margonem Addons (`MDMA`) Change Log
+--------------------------------------------------------------------------------
+
+## Unreleased
+
+### Dodano
+- `Manager`: dodano możliwość zmiany skrótu klawiszowego otwierającego manager dodatków.
+- `Super Rzemieślnik`: dodano listę przedmiotów ignorowanych podczas ulepszania.
+- `Super Rzemieślnik`: dodano opcję ulepszania przedmiotami eventowymi podczas ulepszania przyciskiem `Ulepsz`.
+- `Super Rzemieślnik`: dodano opcję pozwalającą na opróżnianie schowka, gdy w ekwipunku pozostanie określona liczba wolnych miejsc.
+- `Super Rzemieślnik`: przycisk **Ulepsz** zostanie wyszarzony, jeśli nie ma przedmiotów do spalenia według aktualnych kryteriów.
+- `Zapraszanie do drużyny`: dodano sprawdzanie listy emocji kandydata do procesu walidacji.
+
+### Zmieniono
+- `Manager`: zmieniono sposób wyświetlania aktywnych dodatków.
+- `Super Rzemieślnik`: zmieniono sekcję `Rozmiar bufora` na `Schowek na przedmioty`.
+- `Super Rzemieślnik`: zmieniono mechanizm wykrywania przepełnienia schowka. Przedmioty zostaną wykorzystane do ulepszania przed jego pełnym zapełnieniem, jeśli:
+    a. rozmiar schowka przekracza liczbę wolnych miejsc w ekwipunku,
+    b. do osiągnięcia dziennego limitu brakuje mniej przedmiotów, niż wynosi rozmiar schowka.
+
+### Naprawiono
+- `Super Rzemieślnik`: naprawiono błedne używanie przedmiotów ze statystykami `artisan_worthless`, `bonus_reselect`, `personal`, `target_rarity` oraz przedmiotów eventowych podczas automatycznego ulepszania.
+- `Super Rzemieślnik`: naprawiono mechanizm usuwania przedmiotu ze slotu, gdy przedmiot jest już ulepszony.
+- `Zapraszanie do drużyny`: naprawiono funkcjonalność umożliwiającą włączanie i wyłączanie skrótów klawiszowych.
+
+### Zmiany wewnętrzne
+
+--------------------------------------------------------------------------------
 
 ## MDMA 0.12.0 (2025/02/09)
 
@@ -12,7 +39,6 @@
     - Przycisk **Ulepsz** umożliwiający ulepszanie przedmiotami o rzadkości wyższej niż pospolita w dowolnym momencie.
 - `Znacznik`: dodano możliwość zmiany rzadkości własnych znaczników.
 - `Znacznik`: dodano animacje wewnątrz oraz przy wyborze własnych znaczników.
-
 
 ### Zmieniono
 - `Accept Group`: zmieniono nazwę dodatku na `Akceptowanie zaproszeń do drużyny`.
