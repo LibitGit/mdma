@@ -1,7 +1,19 @@
-# Multipurpose Discord to Margonem Addons (`MDMA`) Change Log
+# Multipurpose Discord to Margonem Addons (`MDMA`) Log zmian
 --------------------------------------------------------------------------------
 
 ## Unreleased
+
+### Dodano
+
+### Zmieniono
+
+### Naprawiono
+
+### Zmiany wewnętrzne
+
+--------------------------------------------------------------------------------
+
+## MDMA 0.13.0 (2025/02/12)
 
 ### Dodano
 - `Manager`: dodano możliwość zmiany skrótu klawiszowego otwierającego manager dodatków.
@@ -19,13 +31,13 @@
     b. do osiągnięcia dziennego limitu brakuje mniej przedmiotów, niż wynosi rozmiar schowka.
 
 ### Naprawiono
+- `Gracze na mapie`: naprawiono mechanizm odpowiedzialny za "dobijanie" graczy.
 - `Super Rzemieślnik`: naprawiono błedne używanie przedmiotów ze statystykami `artisan_worthless`, `bonus_reselect`, `personal`, `target_rarity` oraz przedmiotów eventowych podczas automatycznego ulepszania.
 - `Super Rzemieślnik`: naprawiono mechanizm usuwania przedmiotu ze slotu, gdy przedmiot jest już ulepszony.
 - `Zapraszanie do drużyny`: naprawiono funkcjonalność umożliwiającą włączanie i wyłączanie skrótów klawiszowych.
 
 ### Zmiany wewnętrzne
-
---------------------------------------------------------------------------------
+- Dodano wsparcie dla angielskiej wersji gry.
 
 ## MDMA 0.12.0 (2025/02/09)
 
