@@ -32,7 +32,7 @@
 
 ### Naprawiono
 - `Gracze na mapie`: naprawiono funkcjonalność odpowiedzialną za aktualizowanie pozycji celu wybranego przez przycisk `Dobijaj` w menu kontekstowym graczy.
-- `Super Rzemieślnik`: naprawiono funkcjonalność odpowiedzialną za
+- `Super Rzemieślnik`: naprawiono funkcjonalność opróżniania slotu po pełnym ulepszeniu przedmiotu.
 - `Super Rzemieślnik`: naprawiono mechanizm sprawdzania przepełnienia schowka w sytuacji, gdy bohater zdobędzie przedmiot przed załadowaniem limitu dziennego.
 - `Znacznik`: naprawiono kapitalizacje tekstu podczas wyszukiwania znaczników podstawowych.
 
