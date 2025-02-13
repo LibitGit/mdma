@@ -13,6 +13,33 @@
 
 --------------------------------------------------------------------------------
 
+## MDMA 0.13.1 (2025/02/13)
+
+### Dodano
+- `Kastrat`: dodano przycisk umożliwiający podejście do aktualnego celu.
+- NOWOŚĆ `Rówieśnicy online`: dodatek dodaje okno z listą zalogowanych członków klanu oraz przyjaciół.  
+    - Wewnątrz listy znajduje się przycisk umożliwiający zaproszenie wybranego gracza do grupy.  
+    - Lista aktualizuje się na bieżąco, niezależnie od tego, czy jesteśmy w walce, czy nie.
+
+### Zmieniono
+- `Akceptowanie zaproszeń do drużyny`: zmieniono nazwę dodatku na `Akceptowanie zaproszeń do grupy`.
+- `Kastrat`: zmieniono mechanizm wyznaczania aktualnego celu:  
+    - **Poprzednio**: celem mógł zostać gracz znajdujący się w odległości mniejszej niż trzy kratki od bohatera.  
+    - **Obecnie**: celem może zostać każdy gracz, niezależnie od odległości od bohatera.
+- `Super Rzemieślnik`: ograniczono ilość składników zużywanych w jednej akcji ulepszania do 25.
+    - Jeżeli ilość składników przekracza 25 to czyszczenie schowka zostanie podzielone na odpowiednią ilość żądań.
+- `Zapraszanie do drużyny`: zmieniono nazwę dodatku na `Zapraszanie do grupy`.
+
+### Naprawiono
+- `Gracze na mapie`: naprawiono funkcjonalność odpowiedzialną za aktualizowanie pozycji celu wybranego przez przycisk `Dobijaj` w menu kontekstowym graczy.
+- `Super Rzemieślnik`: naprawiono funkcjonalność odpowiedzialną za
+- `Super Rzemieślnik`: naprawiono mechanizm sprawdzania przepełnienia schowka w sytuacji, gdy bohater zdobędzie przedmiot przed załadowaniem limitu dziennego.
+- `Znacznik`: naprawiono kapitalizacje tekstu podczas wyszukiwania znaczników podstawowych.
+
+### Zmiany wewnętrzne
+- Dodano zabezpieczenia zapobiegające wczytywaniu dodatków premium bez odpowiedniego poziomu dostępu.
+- Zmieniono mechanizm generowania kodów błędów, znacznie usprawniając działanie zestawu.
+
 ## MDMA 0.13.0 (2025/02/12)
 
 ### Dodano
