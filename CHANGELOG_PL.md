@@ -8,8 +8,11 @@
 ### Zmieniono
 
 ### Naprawiono
+- `Rówieśnicy online`: poprawiono literówkę w oknie dodatku.
 
 ### Zmiany wewnętrzne
+- Naprawiono mechanizm odpowiadający za tworzenie połączeń z WebSocketem.
+- `Service Worker`: zaktualizowano mechanizm odpowiedzialny za generowanie kodów błędów.
 
 --------------------------------------------------------------------------------
 
