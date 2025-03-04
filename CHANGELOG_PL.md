@@ -4,17 +4,35 @@
 ## Unreleased
 
 ### Dodano
+- `Manager`: dodano obsługę znaków "**!@#$%^&*()_+-={}[]\\|;:'\",.<>/?\`~€§**" w skrócie klawiszowym otwierającym zestaw.
+- `Gracze na mapie`: dodano licznik wyświetlający liczbę graczy na mapie.
+- `Gracze na mapie`: dodano pole wyszukiwania umożliwiające filtrowanie graczy na mapie.
+- `Znacznik`: dodano automatyczne usuwanie własnego znacznika, gdy przedmiot, na który został nałożony, stanie się przedmiotem z listy znaczników podstawowych.
 
 ### Zmieniono
+- `Gracze na mapie`: ograniczono wysokość okna dodatku.
 
 ### Naprawiono
 - `Rówieśnicy online`: poprawiono literówkę w oknie dodatku.
+- `Gracze na mapie`: naprawiono mechanizm wyświetlania emocji w komórkach graczy.
+- `Znacznik`: naprawiono układ elementów DOM w przedmiotach posiadających własne znaczniki.
 
 ### Zmiany wewnętrzne
 - Naprawiono mechanizm odpowiadający za tworzenie połączeń z WebSocketem.
 - `Service Worker`: zaktualizowano mechanizm odpowiedzialny za generowanie kodów błędów.
 
 --------------------------------------------------------------------------------
+
+## MDMA 0.13.2 (2025/03/04)
+
+### Dodano
+
+### Zmieniono
+
+### Naprawiono
+
+### Zmiany wewnętrzne
+- Przystosowano struktury danych po aktualizacji gry.
 
 ## MDMA 0.13.1 (2025/02/13)
 
