@@ -13,11 +13,14 @@
 - `Gracze na mapie`: ograniczono wysokość okna dodatku.
 
 ### Naprawiono
+- Naprawiono mechanizm zamykania okna ustawień dodatku w przypadku wprowadzenia niepoprawnej wartości w którymkolwiek z ustawień.
 - `Rówieśnicy online`: poprawiono literówkę w oknie dodatku.
 - `Gracze na mapie`: naprawiono mechanizm wyświetlania emocji w komórkach graczy.
 - `Znacznik`: naprawiono układ elementów DOM w przedmiotach posiadających własne znaczniki.
+- `Super Rzemieślnik`: naprawiono mechanizm wczytywania postępu ulepszenia itemu w przypadku, gdy przedmiot jest w pełni ulepszony.
 
 ### Zmiany wewnętrzne
+- Naprawiono błąd podczas inicjalizacji listy rówieśników, gdy na bohater nie posiada przyjaciół.
 - Naprawiono mechanizm odpowiadający za tworzenie połączeń z WebSocketem.
 - `Service Worker`: zaktualizowano mechanizm odpowiedzialny za generowanie kodów błędów.
 
