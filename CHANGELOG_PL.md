@@ -4,27 +4,88 @@
 ## Unreleased
 
 ### Dodano
+
+### Zmieniono
+
+### Naprawiono
+
+### Zmiany wewnętrzne
+
+--------------------------------------------------------------------------------
+
+## MDMA 0.14.0 (2025/03/21)
+
+### Dodano
+- Dodano nowe przyciski do nagłówków okien dodatków:
+  - konfiguracja przeźroczystości,
+  - minimalizowanie,
+  - zmiana rozmiaru,
+  - przełącznik działania dodatku.
+- Dodano walidację nicków do komponentu `Input` zgodnie z kryteriami gry.
+- NOWOŚĆ `Adaptacyjne Zestawy Do Walki`: dodatek umożliwia automatyczną zmianę zestawów do walki w zależności od sytuacji, w jakiej znajduje się bohater.
+- `Gracze Na Mapie`: dodano licznik wyświetlający liczbę graczy na mapie.
+- `Gracze Na Mapie`: dodano kolorowanie komórek graczy w zależności od ich relacji względem bohatera.
+- `Gracze Na Mapie`: dodano pole wyszukiwania umożliwiające filtrowanie graczy na mapie.
+- `Gracze Na Mapie`: dodano wyświetlanie listu gończego w komórce oraz tipie graczy.
+- `Gracze Na Mapie`: uzupełniono menu kontekstowe, wyświetlane po naciśnięciu PPM na komórkę gracza, o brakujące opcje z listy graczy wbudowanej do gry.
+- `Gracze Na Mapie`: dodano opcję wyłączenia automatycznego przerywania dobijania celu dla użytkowników premium. Gdy opcja jest włączona, dobijanie zostaje przerwane w następujących przypadkach:
+  - przerwanie trasy podczas inicjalnego podchodzenia do celu,
+  - wejście w walkę,
+  - po podejściu na początkową pozycję celu, gdy cel nie znajduje się w zasięgu ataku,
+  - cel opuści mapę.
+- `Gracze Na Mapie`: dodano podświetlanie gracza po najechaniu na jego komórkę myszką, po naciśnięciu PPM na jego komórkę oraz po wybraniu go za cel przy użyciu opcji kontekstowych `Atakuj` i `Dobijaj`. Podświetlenie powoduje wyświetlanie gracza powyżej wszystkich graczy z mapy.
+- `Gracze Na Mapie`: dodano opcje sortowania względem poziomu, profesji oraz nicku graczy.
+- `Gracze Na Mapie`: dodano możliwość podejścia do gracza po dwukliku LPM na jego komórkę w liście graczy.
+- `Gracze Na Mapie`: dodano podświetlanie rówieśnika po najechaniu na jego komórkę myszką oraz po naciśnięciu PPM na jego komórkę. Podświetlenie powoduje wyświetlanie gracza powyżej wszystkich graczy z mapy.
+- `Kastrat`: dodano podświetlanie aktualnego celu. Podświetlenie powoduje wyświetlanie gracza powyżej wszystkich graczy z mapy.
+- `Kastrat`: dodano możliwość włączenia skrótów klawiszowych pozwalających na podejście do aktualnego celu oraz przełączenie automatycznego atakowania celu.
+- `Kastrat`: dodano możliwość wyłączenia przycisku `Podejdź do celu`.
 - `Manager`: dodano obsługę znaków "**!@#$%^&*()_+-={}[]\\|;:'\",.<>/?\`~€§**" w skrócie klawiszowym otwierającym zestaw.
-- `Gracze na mapie`: dodano licznik wyświetlający liczbę graczy na mapie.
-- `Gracze na mapie`: dodano pole wyszukiwania umożliwiające filtrowanie graczy na mapie.
+- `Rówieśnicy Online`: dodano opcje sortowania względem poziomu, profesji oraz nicku rówieśników.
+- `Rówieśnicy Online`: dodano możliwość podejścia do rówieśnika po dwukliku LPM na jego komórkę w liście.
+- `Rówieśnicy Online`: dodano wyświetlanie mapy, na której znajduje się dany rówieśnik. Jeśli gracz przebywa na tej samej mapie co bohater, widoczne są również jego aktualne koordynaty.
+- `Rówieśnicy Online` – dodano menu kontekstowe otwierane po naciśnięciu PPM na komórkę rówieśnika. W menu dostępne są opcje:  
+  - `Wyślij wiadomość`,
+  - `Pokaż ekwipunek` – opcja może nie zadziałać, m.in. jeśli rówieśnik jest AFK i nie znajdował się na tej samej mapie co bohater,
+  - `Zaproś do przyjaciół`,
+  - `Dodaj do wrogów`,
+  - `Pokaż profil` – opcja może nie zadziałać, m.in. jeśli rówieśnik jest AFK i nie znajdował się na tej samej mapie co bohater.
+- `Rówieśnicy Online`: dodano możliwość odświeżania listy rówieśników poprzez przewinięcie w dół, gdy użytkownik znajduje się na jej szczycie. Odświeżanie powoduje jedynie wczytanie nowych pozycji graczy. To, czy gracz jest zalogowany aktualizuje się automatycznie.
+- `Super Rzemieślnik`: umożliwiono wybór rzadkości przedmiotów, które mają być objęte automatycznym ulepszaniem.
 - `Znacznik`: dodano automatyczne usuwanie własnego znacznika, gdy przedmiot, na który został nałożony, stanie się przedmiotem z listy znaczników podstawowych.
 
 ### Zmieniono
-- `Gracze na mapie`: ograniczono wysokość okna dodatku.
+- Ujednolicono nazwy nagłówków wewnątrz okien dodatków.
+- Ujednolicono pozycjonowanie elementów wewnątrz nagłówków dodatków.
+- Ujednolicono używanie wielkich liter wewnątrz nazw dodatków.
+- Zamykanie okna nie wpływa już na jego ułożenie względem innych okien.
+- Zastąpiono suwaki w oknach dodatków animacją z cieniem, stosowaną w miejscach, w których znajduje się więcej zawartości do wyświetlenia.
+- Zmieniono mechanizm odpowiadający za przesuwanie okien, w przypadku gdy okna wychodzą poza viewport. Okna będą płynnie dostosowywać swoją pozycję razem ze zmianą rozmiaru widocznego obszaru.
+- `Gracze Na Mapie`: ograniczono dostęp do opcji `Dobijaj` w menu kontekstowym dla użytkowników bez konta premium. Zamiast niej wyświetlana jest opcja `Atakuj`.
+- `Kastrat`: zastąpiono checkbox umożliwiający wyłączanie atakowania celu z poziomu okna dodatku przyciskiem umieszczonym wewnątrz nagłówka okna.
+- `Kastrat`: zastąpiono przycisk z nickiem celu na przycisk `Podejdź do celu`.
+- `Znacznik`: przystosowano znaczniki podstawowe po aktualizacji gry (przedział 135 - 170).
 
 ### Naprawiono
+- Naprawiono mechanizm otwierania okna popup rozszerzenia na przeglądarce Vivaldi.
 - Naprawiono mechanizm zamykania okna ustawień dodatku w przypadku wprowadzenia niepoprawnej wartości w którymkolwiek z ustawień.
-- `Rówieśnicy online`: poprawiono literówkę w oknie dodatku.
-- `Gracze na mapie`: naprawiono mechanizm wyświetlania emocji w komórkach graczy.
-- `Znacznik`: naprawiono układ elementów DOM w przedmiotach posiadających własne znaczniki.
+- Naprawiono mechanizm wczytywania danych użytkownika na angielskiej wersji gry.
+- Naprawiono wczytywanie listy przyjaciół w przypadku, gdy bohater nie ma przyjaciół.
+- Naprawiono mechanizm wyświetlania tipów w przypadku, gdy zostaje wysłany sygnał usunięcia tipu.
+- `Gracze Na Mapie`: naprawiono mechanizm wyświetlania emocji w komórkach graczy.
+- `Rówieśnicy Online`: poprawiono literówkę w oknie dodatku.
 - `Super Rzemieślnik`: naprawiono mechanizm wczytywania postępu ulepszenia itemu w przypadku, gdy przedmiot jest w pełni ulepszony.
+- `Super Rzemieślnik`: naprawiono mechanizm ulepszania przemiotów w przypadku, gdy podczas otwierania okna rzemiosła użytkownik zdobędzie przedmiot.
+- `Super Rzemieślnik`: naprawiono niepoprawne aktualizowanie rozmiaru schowka w przypadku, gdy aktywna jest opcja "Opróżnij schowek przy ≤ x wolnych miejscach w ekwipunku".
+- `Znacznik`: naprawiono układ elementów DOM w przedmiotach posiadających własne znaczniki.
 
 ### Zmiany wewnętrzne
 - Naprawiono błąd podczas inicjalizacji listy rówieśników, gdy na bohater nie posiada przyjaciół.
 - Naprawiono mechanizm odpowiadający za tworzenie połączeń z WebSocketem.
+- Naprawiono wczytywanie odpowiedniego `ev` podczas generowania kodów błędów.
+- Zmieniono mechanizm odpowiadający za otwieranie okna popup rozszerzenia.
+- Dodano deduplikowanie wiadomości wysyłanych do `Service Worker`.
 - `Service Worker`: zaktualizowano mechanizm odpowiedzialny za generowanie kodów błędów.
-
---------------------------------------------------------------------------------
 
 ## MDMA 0.13.2 (2025/03/04)
 
