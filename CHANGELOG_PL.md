@@ -13,6 +13,22 @@
 
 --------------------------------------------------------------------------------
 
+## MDMA 0.14.1 (2025/03/24)
+
+### Dodano
+- `Rówieśnicy Online`: dodano opcjonalne wyświetlanie tipa po najechaniu myszką na komórkę rówieśnika, jeśli jej zawartość nie mieści się w całości.
+
+### Zmieniono
+- `Rówieśnicy Online`: zmieniono domyślne wyświetlanie tipa na: zawsze po najechaniu myszką na komórkę rówieśnika.
+- `Adaptacyjne Zestawy Do Walki`: zmieniono mechanizm wykrywania obecności potwora o randze **Kolos** w aktualnej lokacji.
+- `Znacznik`: zmieniono mechanizm dodawania znaczników podstawowych
+
+### Naprawiono
+- `Znacznik`: naprawiono mechanizm usuwający znaczniki własne w przypadku, gdy przedmiot stanie się przedmiotem posiadającym znacznik podstawowy.
+
+### Zmiany wewnętrzne
+- Usunięto ostatnie artefakty po przestarzałej implementacji zmiennych globalnych zestawu.
+
 ## MDMA 0.14.0 (2025/03/21)
 
 ### Dodano

@@ -5,7 +5,7 @@
   "content_security_policy": {
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
   },
-  "version": "0.14.0",
+  "version": "0.14.1",
   "permissions": [
     "tabs",
     "activeTab",
