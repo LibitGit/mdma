@@ -13,6 +13,28 @@
 
 --------------------------------------------------------------------------------
 
+## MDMA 0.14.2 (2025/03/28)
+
+### Dodano
+- `Gracze Na Mapie`: dodano opcję umożliwiającą otwieranie okna dodatku za pomocą wbudowanego do gry widżetu `Gracze na mapie`.
+- `Gracze Na Mapie`: dodano konfigurację umożliwiającą zmianę wyświetlania poziomów postaci powyżej 300.
+- `Rówieśnicy Online`: dodano konfigurację umożliwiającą zmianę wyświetlania poziomów postaci powyżej 300.
+- `Rówieśnicy Online`: dodano opcję umożliwiającą wyświetlanie lokalizacji rówieśnika.
+- `Rówieśnicy Online`: dodano opcję umożliwiającą wyświetlanie aliasu lokalizacji rówieśnika.
+  - Alias lokalizacji pojawia się, gdy gracz znajduje się w:  
+    - przedsionku tytana lub lokacji, w której respi się tytan,  
+    - przedsionku kolosa, lokacji, w której grasuje kolos, lub lokacji docelowej zwoju teleportacyjnego na kolosa. (Np. Morski testament I - teleportuje na Archipelag Bremus Anprzed wejście na przedsionek)
+
+### Zmieniono
+- Zmodyfikowano sposób przechowywania pozycji rówieśników.
+  - Po opuszczeniu przez rówieśnika mapy, na której znajduje się bohater, jego zapisana pozycja zostanie usunięta.
+- `Rówieśnicy Online`: usunięto koordynaty z tipa wyświetlanego w komórce rówieśników.
+
+### Naprawiono
+
+### Zmiany wewnętrzne
+- Zmieniono sposób wyświetlania tipów w zestawie.
+
 ## MDMA 0.14.1 (2025/03/24)
 
 ### Dodano
