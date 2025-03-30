@@ -13,6 +13,19 @@
 
 --------------------------------------------------------------------------------
 
+## MDMA 0.14.3 (2025/03/30)
+
+### Dodano
+
+### Zmieniono
+
+### Naprawiono
+- `Rówieśnicy Online`: naprawiono aktualizowanie pozycji rówieśnika, gdy wyjdzie z mapy na jakiej znajduje się bohater.
+
+### Zmiany wewnętrzne
+- Zaktualizowano oraz udokumentowano struktury graczy, rówieśników oraz bohatera.
+- Zaktualizowano system emocji uzupełniając go o brakujące warianty.
+
 ## MDMA 0.14.2 (2025/03/28)
 
 ### Dodano
