@@ -13,6 +13,20 @@
 
 --------------------------------------------------------------------------------
 
+## MDMA 0.14.4 (2025/04/01)
+
+### Dodano
+- Dodano automatyczne usuwanie graczy z listy rówieśników.
+
+### Zmieniono
+
+### Naprawiono
+- `Kastrat`: naprawiono oraz zoptymalizowano mechanizm aktualizowania celu.
+- `Gracze Na Mapie`: naprawiono niepoprawne działanie mechanizmu wyświetlania emocji, gdy gracz wyjdzie z walki lub wbije poziom.
+
+### Zmiany wewnętrzne
+- Naprawiono działanie mechanizmu zarządzania emocjami w przypadku, gdy zestaw nie jest w stanie rozpoznać otrzymanej emocji.
+
 ## MDMA 0.14.3 (2025/03/30)
 
 ### Dodano
