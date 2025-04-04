@@ -1,4 +1,4 @@
-# Multipurpose Discord to Margonem Addons (`MDMA`) Log zmian
+# Multipurpose Discord to Margonem Addons (`MDMA`) log zmian
 --------------------------------------------------------------------------------
 
 ## Unreleased
@@ -10,6 +10,7 @@
 ### Naprawiono
 
 ### Zmiany wewnętrzne
+- Zmieniono sposób przechowywania zmiennych globalnych. Od teraz wszystkie są reprezentowane przy użyciu `*const T` (raw pointer).
 
 --------------------------------------------------------------------------------
 
