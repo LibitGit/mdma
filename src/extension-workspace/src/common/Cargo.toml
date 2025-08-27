@@ -1,0 +1,70 @@
+[package]
+name = "common"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+description.workspace = true
+repository.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+path = "lib.rs"
+
+[features]
+no_window = []
+firefox = []
+extension = [
+    "dep:wasm-bindgen",
+    "dep:wasm-bindgen-futures",
+    "dep:serde-wasm-bindgen",
+    "dep:js-sys",
+    "dep:futures",
+    "dep:pin-project",
+    "web-sys/console",
+    "uuid?/js",
+]
+task = ["dep:serde_json", "dep:uuid", "dep:serde_repr"]
+popup = ["extension", "task", "web-sys?/Window"]
+foreground = ["extension", "task", "web-sys?/Window"]
+background = [
+    "extension",
+    "task",
+    "no_window",
+    "web-sys?/ServiceWorkerGlobalScope",
+    "gloo-net/websocket",
+]
+backend = ["task", "dep:axum", "dep:anyhow"]
+
+[dependencies]
+# TODO: Remove along with old error handling impl
+thiserror = "2.0.11"
+paste = "1.0.15"
+cfg-if = "1.0.1"
+
+# web framework
+axum = { workspace = true, optional = true }
+
+# async
+wasm-bindgen-futures = { workspace = true, optional = true }
+futures = { workspace = true, optional = true }
+pin-project = { workspace = true, optional = true }
+
+# encoding
+obfstr.workspace = true
+
+# serialization
+serde.workspace = true
+serde_with.workspace = true
+serde_repr = { workspace = true, optional = true }
+serde-wasm-bindgen = { workspace = true, optional = true }
+serde_json = { workspace = true, optional = true }
+
+#utilities
+uuid = { workspace = true, optional = true }
+anyhow = { workspace = true, optional = true }
+
+# bindings
+wasm-bindgen = { workspace = true, optional = true }
+js-sys = { workspace = true, optional = true }
+web-sys = { workspace = true, optional = true }
+gloo-net = { workspace = true, optional = true }

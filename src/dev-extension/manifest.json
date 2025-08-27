@@ -1,0 +1,68 @@
+{
+  "manifest_version": 3,
+  "name": "MDMA DEV",
+  "description": "Multipurpose Discord to Margonem Addons",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; script-src-elem 'self' http://localhost:3000/ https://libit.ovh/"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs7n0Vii/fwToewpdgCDvEEVk8gp1gsbp1ZZH6h5V9GICirJ2cRw+o4eLNX2FwAlsQazQePhLCal4Uk87k28uTvwbn/HsdQwYMlixwOpLOiL3Nw8nFlJ+fIMv6WUm+sVwV++6wUHslXnnTdw3lJEHyWEpPxFAvJNjoXbGYbBfMLTYyd2EreL6CcZmcO6/xsAtLZPGgQBVPgZoG3yWuw3g66mTwdMeeJXI0MWFlJlW9//PWkXA4wfols8kackKGr2N5l2GapI4GODgBrNX5jKCCBvA885vspzBOh66mHYcyYsKuT5Hf60zc42QZBsjaCOU2WK0wUl+4F0P6KkATRZP/wIDAQAB",
+  "version": "0.15.0",
+  "permissions": [
+    "identity",
+    "tabs",
+    "activeTab",
+    "cookies",
+    "scripting",
+    "storage",
+    "debugger"
+  ],
+  "host_permissions": [
+    "https://*.margonem.pl/",
+    "https://*.margonem.com/",
+    "http://localhost:3000/*"
+  ],
+  "background": {
+    "type": "module",
+    "service_worker": "wasm/background.js"
+  },
+  "externally_connectable": {
+    "matches": [
+      "https://*.margonem.pl/",
+      "https://*.margonem.com/",
+      "http://localhost:3000/*"
+    ]
+  },
+  "action": {
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "minimum_chrome_version": "102",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "/wasm/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.margonem.pl/",
+        "https://*.margonem.com/"
+      ],
+      "js": [
+        "foreground_module.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}

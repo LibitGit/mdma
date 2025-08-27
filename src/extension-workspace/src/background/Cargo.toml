@@ -1,0 +1,55 @@
+[package]
+name = "background"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+description.workspace = true
+repository.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+path = "lib.rs"
+
+[features]
+firefox = []
+
+[dependencies]
+common = { workspace = true, features = ["background"] }
+uuid = { workspace = true, features = ["js"] }
+console_error_panic_hook.workspace = true
+gloo-net = { workspace = true, features = ["websocket"] }
+scopeguard.workspace = true
+
+# async
+wasm-bindgen-futures.workspace = true
+futures.workspace = true
+pin-project.workspace = true
+
+# serialization
+serde.workspace = true
+serde-wasm-bindgen.workspace = true
+serde_json.workspace = true
+serde_repr.workspace = true
+serde_with.workspace = true
+
+# encoding
+obfstr.workspace = true
+base64.workspace = true
+
+# bindings
+wasm-bindgen.workspace = true
+js-sys.workspace = true
+[dependencies.web-sys]
+workspace = true
+features = [
+    "WebSocket",
+    "console",
+    "ErrorEvent",
+    "MessageEvent",
+    "Event",
+    "BinaryType",
+    "WorkerGlobalScope",
+    "Blob",
+    "ServiceWorkerGlobalScope",
+    "Screen",
+]

@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "author": "Libit",
+  "type": "module",
+  "name": "mdma",
+  "version": "0.11.0-test",
+  "packageManager": "yarn@4.9.1",
+  "scripts": {
+    "watch": "rimraf dev-extension/wasm && rollup --config --watch",
+    "profiling": "rimraf dev-extension/wasm && rollup --config --configProfiling",
+    "build": "rimraf ../extension/wasm && rollup --config",
+    "serve": "cargo +nightly run --manifest-path \"C:\\Users\\dawid\\Desktop\\Coding\\Rust\\mdma_extension\\dev\\extension-workspace\\src\\backend\\Cargo.toml\""
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@wasm-tool/rollup-plugin-rust": "file:C:\\Users\\dawid\\Desktop\\Coding\\Rust\\rollup-plugin-rust",
+    "binaryen": "^123.0.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.31.0",
+    "rollup-plugin-livereload": "^2.0.0"
+  }
+}

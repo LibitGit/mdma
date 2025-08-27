@@ -1,0 +1,27 @@
+[package]
+name = "proc_macros"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = {version = "2.0.98", features = ["full"]}
+quote = "1.0.38"
+proc-macro2 = { version = "1.0.93", features = [ "span-locations" ]}
+
+[profile.release]
+lto = true
+strip = true
+debug = 0
+codegen-units = 1
+panic = "abort"
+opt-level = "s"
+incremental = false
+
+[lints.rust.unexpected_cfgs]
+level = "warn"
+priority = 0
+check-cfg = ["cfg(wasm_bindgen_unstable_test_coverage)"]
+

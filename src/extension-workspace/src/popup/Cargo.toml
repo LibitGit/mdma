@@ -1,0 +1,43 @@
+[package]
+name = "popup"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+description.workspace = true
+repository.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+path = "lib.rs"
+
+[dependencies]
+common = { workspace = true, features = ["task", "popup"] }
+console_error_panic_hook.workspace = true
+scopeguard.workspace = true
+
+# async 
+wasm-bindgen-futures.workspace = true
+futures-signals.workspace = true
+futures.workspace = true
+
+# serialization
+serde.workspace = true
+serde-wasm-bindgen.workspace = true
+serde_json.workspace = true
+serde_with.workspace = true
+
+# encoding
+obfstr.workspace = true
+base64.workspace = true
+
+# html
+discard.workspace = true
+dominator.workspace = true
+
+# bindings
+wasm-bindgen.workspace = true
+js-sys.workspace = true
+
+[dependencies.web-sys]
+workspace = true
+features = ["Window", "console", "HtmlButtonElement", "HtmlDivElement", "HtmlAnchorElement"]

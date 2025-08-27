@@ -1,0 +1,62 @@
+[package]
+name = "backend"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+description.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "backend"
+path = "main.rs"
+
+[dependencies]
+# async runtime & concurrency
+tokio = { version = "^1.46.1", features = ["full"] }
+tokio-stream = "^0.1.17"
+tokio-tungstenite = "^0.27.0"
+futures.workspace = true
+dashmap = "6.1.0"
+parking_lot = { version = "0.12.4" }
+
+# web framework
+axum.workspace = true
+reqwest = { version = "0.12.22", features = ["json"] }
+axum-extra = { version = "0.10.1", features = ["typed-header"] }
+tower-http = { version = "0.6.6", features = [
+    "add-extension",
+    "trace",
+    "cors",
+] }
+async-session = "3.0.0"
+
+# discord bot framework
+poise = "0.6.1"
+
+# serialization
+serde.workspace = true
+serde_repr.workspace = true
+serde_json.workspace = true
+serde_with.workspace = true
+
+# database
+redis = "0.32.4"
+mongodb = { version = "^3.2.4", features = ["zstd-compression"] }
+
+# authentication & security
+oauth2 = "^5.0.0"
+jsonwebtoken = "^9.3.1"
+
+# logging
+tracing = "^0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+
+# utilities
+common = { workspace = true, features = ["backend"] }
+scopeguard.workspace = true
+uuid.workspace = true
+anyhow.workspace = true
+
+# This dependency is needed for the DigitalOcean droplet to work properly.
+[target.'cfg(unix)'.dependencies]
+openssl = { version = "0.10.73", features = ["vendored"] }

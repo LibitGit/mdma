@@ -1,0 +1,110 @@
+[package]
+name = "foreground"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+description.workspace = true
+repository.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+path = "lib.rs"
+
+[features]
+firefox = []
+ni = []
+antyduch = []
+
+[dependencies]
+log = "0.4.25"
+console_log = "1.0.0"
+proc_macros.workspace = true
+pathfinding = "4.14.0"
+
+# utilities
+paste = "1.0.15"
+common = { workspace = true, features = ["foreground"] }
+console_error_panic_hook.workspace = true
+itertools.workspace = true
+enum-iterator = "2.1.0"
+
+# async
+wasm-bindgen-futures.workspace = true
+futures.workspace = true
+futures-signals.workspace = true
+pin-project.workspace = true
+
+# serialization
+serde.workspace = true
+serde-wasm-bindgen.workspace = true
+serde_repr.workspace = true
+serde_json.workspace = true
+serde_with.workspace = true
+
+# encoding
+obfstr.workspace = true
+
+# html
+dominator.workspace = true
+discard.workspace = true
+
+# bindings
+wasm-bindgen.workspace = true
+gloo-net.workspace = true
+js-sys.workspace = true
+[dependencies.web-sys]
+workspace = true
+features = [
+  "WebSocket",
+  "CanvasGradient",
+  "ResizeObserver",
+  "EventListenerOptions",
+  "CanvasRenderingContext2d",
+  "AddEventListenerOptions",
+  "HtmlLabelElement",
+  "HtmlCanvasElement",
+  "ValidityState",
+  "HtmlDivElement",
+  "HtmlLinkElement",
+  "MutationObserverInit",
+  "MutationRecord",
+  "MutationObserver",
+  "HtmlIFrameElement",
+  "ShadowRootMode",
+  "Clipboard",
+  "Navigator",
+  "Storage",
+  "MessageEventInit",
+  "BinaryType",
+  "Blob",
+  "ErrorEvent",
+  "FileReader",
+  "MessageEvent",
+  "ProgressEvent",
+  "WebSocket",
+  "console",
+  "CustomEventInit",
+  "CustomEvent",
+  "BlobPropertyBag",
+  "KeyboardEvent",
+  "MouseEvent",
+  "Url",
+  "Window",
+  "Location",
+  "Document",
+  "Element",
+  "HtmlImageElement",
+  "NodeList",
+  "HtmlCollection",
+  "Text",
+  "Headers",
+  "Request",
+  "RequestInit",
+  "RequestMode",
+  "Response",
+  "DomTokenList",
+  "CssStyleDeclaration",
+  "HtmlHeadElement",
+  "Performance",
+  "DomRect",
+]

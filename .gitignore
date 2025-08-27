@@ -1,0 +1,8 @@
+/docs/
+**/.vscode/
+/extension/
+/test-extension/
+/dev/
+**/.env
+**/.github/
+**/*.yml
