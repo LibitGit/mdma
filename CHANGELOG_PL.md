@@ -10,9 +10,89 @@
 ### Naprawiono
 
 ### Zmiany wewnętrzne
-- Zmieniono sposób przechowywania zmiennych globalnych. Od teraz wszystkie są reprezentowane przy użyciu `*const T` (raw pointer).
 
 --------------------------------------------------------------------------------
+
+## MDMA 0.16.1 (2026/04/28)
+
+### Dodano
+- `Znacznik`: przystosowano znaczniki podstawowe po aktualizacji gry.
+
+### Zmieniono
+
+### Naprawiono
+- `Anty Duch`: naprawiono niedziałający dodatek.
+- `Śledzik Zadań`: naprawiono niedziałający dodatek.
+
+### Zmiany wewnętrzne
+
+## MDMA 0.16.0 (2026/04/25)
+
+### Dodano
+- `Neon Bohatera`: dodano wyświetlanie neonów u graczy ze specjalnymi uprawnieniami.
+  - To czy dane konto ma dostęp do tej funkcjonalności widać w menu rozszerzenia w zakładce licencje.
+
+### Zmieniono
+- `Manager`: zaktualizowano UI managera.
+- Usprawniono generowanie kodów błędów. Kody generowane są teraz podczas kompilacji zestawu.
+
+### Naprawiono
+- Działanie zestawu na SI.
+- Działanie zestawu na angielskiej wersji gry.
+- `Manager`: naprawiono miganie managera podczas zmiany rozmiaru okna gry.
+
+### Zmiany wewnętrzne
+
+## MDMA 0.15.2 (2026/04/03)
+
+### Dodano
+- Dodano automatyczne odświeżanie sesji dostępu do zestawu.
+
+### Zmieniono
+- Zmieniono pozycję widżetu managera, wyświetla się on teraz po kliknięciu na statystyki bohatera.
+
+### Naprawiono
+- Naprawiono zapisywanie ustawień dla postaci z gry.
+- Naprawiono zapisywanie ustawień managera dodatków.
+
+### Zmiany wewnętrzne
+
+## MDMA 0.15.1 (2026/04/01)
+
+### Dodano
+
+### Zmieniono
+
+### Naprawiono
+- Naprawiono zapisywanie ustawień wewnątrz rozszerzenia.
+- Naprawiono walidacje licencji po stronie serwera.
+
+### Zmiany wewnętrzne
+
+## MDMA 0.15.0 (2026/04/01)
+
+### Dodano
+- NOWOŚĆ `Anty Duch`: automatyczne wyjście ze stanu nieaktywności.
+- NOWOŚĆ `Neon Bohatera`: dodatek wyświetla neon pod bohaterem gry.
+  - Docelowo wyświetlane będą również neony innych graczy którzy mają specjalne uprawnienia (widoczne w menu rozszerzenia).
+- NOWOŚĆ `Timery Mobów Na Ziemi`: po zbiciu potwora zostaje pod nim wyświetlony timer z czasem do jego odrodzenia.
+- NOWOŚĆ `Śledzik Zadań`: po włączeniu lub zmianie w trackingu bohater automatycznie podejdzie do celu.
+- Dodano pathfinder, którego implementacja nie koliduje z antybotem gry.
+- Dodano możliwość zapisu ustawień dodatków na postać/konto z gry/konto discord z poziomu menu rozszerzenia.
+- Dodano walidacje danych gracza za pomocą endpointu `/validate` z public-api.
+
+### Zmieniono
+
+### Naprawiono
+- Wyłączono chodzenie gracza podczas przenoszenia okien zestawu na SI.
+- `Poprawione Powiadomienia`: naprawiono działanie dodatku na SI.
+- Zapisywanie ustawień zestawu na angielskiej wersji gry.
+
+### Zmiany wewnętrzne
+- Zmieniono sposób inicjalizacji zestawu. Od teraz ładuje się zawsze przed jakimkolwiek kodem z gry.
+- Zmieniono sposób komunikacji pomiędzy kontekstami rozszerzenia. Obecny protokół został stworzony na podobieństwo JSON-RPC 2.0
+- Upiększono wyświetlanie logów z zestawu.
+- Dodano renderowanie przedmiotów wyłączonych z wyboru wewnątrz zestawu.
 
 ## MDMA 0.14.4 (2025/04/01)
 
