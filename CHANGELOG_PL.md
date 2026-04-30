@@ -13,6 +13,21 @@
 
 --------------------------------------------------------------------------------
 
+## MDMA 0.16.2 (2026/05/01)
+
+### Dodano
+- `Manager`: dodano ustawienie służące ostrzeganiu przed przebiciem poziomu.
+
+### Zmieniono
+
+### Naprawiono
+- `Super Rzemieślnik`: naprawiono spalanie przedmiotami, które nie znajdują się już w ekwipunku bohatera.
+- `Manager`: przywrócono możliwość zmiany skrótu klawiszowego otwierającego zestaw dodatków.
+
+### Zmiany wewnętrzne
+- Naprawiono wczytywanie outfitu z angielskiej wersji gry wyświetlanego w podglądzie licencji.
+- Naprawiono zautomatyzowane chodzenia podczas zbyt szybkiego zmieniania celu.
+
 ## MDMA 0.16.1 (2026/04/28)
 
 ### Dodano
