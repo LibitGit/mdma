@@ -13,6 +13,27 @@
 
 --------------------------------------------------------------------------------
 
+## MDMA 0.16.3 (2026/05/07)
+
+### Dodano
+- `Rówieśnicy Online`: dodano podpisy tytanów i kolosów do angielskiej wersji gry.
+- `Manager`: dodano title bar do managera.
+
+### Zmieniono
+- `Rówieśnicy Online`: zaktualizowano podpisy tytanów i kolosów po aktualizacji gry.
+
+### Naprawiono
+- `Rówieśnicy Online`: naprawiono pozycjonowanie menu kontekstowego rówieśników.
+- `Śledzik Zadań`: naprawiono błędy wywoływane podczas zautomatyzowanego chodzenia.
+- Naprawiono błędy w przypadku, gdy użytkownik rozłączy sesje `chrome.debugger`.
+- Naprawiono błędne zaznaczanie tekstu w okienkach na SI.
+- `Super Rzemieślnik`: naprawiono błędne dodawanie przedmiotów do schowka, gdy bohater wbije poziom po wygranej walce.
+- Naprawiono błędne aktualizowanie listy rówieśników.
+- Naprawiono błędy podczas inicjalizacji zestawu.
+- Naprawiono wyskakiwanie okna receptur w przypadku, gdy bohater ma poziom mniejszy niż 20.
+
+### Zmiany wewnętrzne
+
 ## MDMA 0.16.2 (2026/05/01)
 
 ### Dodano
